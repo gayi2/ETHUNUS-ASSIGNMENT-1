@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:white;
+            margin: 0;
+        }
+
+        .total {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        .pp{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        .u1 {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .u1  label{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .u1 input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+.c1{
+    width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+}
+
+.c1:hover{
+    background-color: #45a049;
+}
+
+.options {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+        }
+
+        .cancel-btn {
+            background-color: #d9534f;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cancel-btn:hover {
+            background-color: #c9302c;
+        }
+
+        .forgot-password {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="total">
+        <img src="profile logo.webp" alt=" profilephoto"  class="pp"  >
+    <h2>login</h2>
+    <form >
+        <div class="u1"  >
+        <label for="username"> username:</label>
+        <input type="text" id="username" placeholder="enter username"><br>
+    </div>
+    <div class="u1" >
+        <label for="password"> password:</label>
+        <input type="text" id="password" placeholder="enter password"><br>
+    </div>
+    <button type="submit" class="c1"  >login</button>
+    
+    <div class="options">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+        <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+
+    <button type="button" class="cancel-btn">Cancel</button>
+    </form>
+    
+</div>
+</body>
+</html>
